@@ -1,0 +1,347 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#" (click)="actualView = 'home'">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+  aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'home'" href="#">Datos personales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'homework'" href="#">Tareas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'diplomas'" href="#">diplomas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Sistemas'" href="#">Sistemas de num</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Binario'" href="#">Codigo Binario</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Boleana'" href="#">Algebra Boleana</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Circuitos'" href="#">Circuitos MSI y LSI</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Decodificadores'" href="#">Decodificadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Multiplexores'" href="#">Multiplexores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Contadores'" href="#">Contadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'Sumadores'" href="#">Sumadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="actualView = 'ALU'" href="#">ALU</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div *ngIf="actualView == 'home'">
+      <p>Nombre: Monica Martìnez</p>
+      <p>Grupo: 102-S</p>
+      <p>Carrera: LSCA</p>
+    </div>
+    <div *ngIf="actualView == 'diplomas'">
+      <img src="https://i.imgur.com/vsoyt8U.jpg" width="90%" />
+    </div>
+    <div *ngIf="actualView == 'Sistemas'">
+      <h1>Informacion:</h1>
+      
+      Los sistemas numéricos de codificación son técnicas utilizadas para representar textos, flujos de datos o archivos mediante números enteros, utilizando los conceptos de la teoría de números. En la actualidad, tanto la teoría de números como los sistemas numéricos de codificación tienen gran auge en el mundo de la criptografía y en la seguridad computacional.
+      En este capítulo estudiaremos el sistema decimal, el binario, el octal y hexadecimal, y las conversiones de un sistema a otro.
+      <h3>IMG</h3>
+      <img src="https://www.unadmexico.mx/sitios/aplicaciones-107/LITE_36/_Un_151_OperacionesAritmeticasBasicas/escenas/imgs/sistemas.jpg"
+      alt="" />
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4kenXkQBIEw" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Binario'">
+      <h1>Informacion:</h1>
+      <p>
+        Todas las computadoras utilizan un lenguaje llamado código binario,
+        basado en sucesiones de bits de 0 y 1 que, utilizando el álgebra de
+        Boole permite codificar entradas y salidas, haciendo uso la informática
+        de este sistema para que las computadoras puedan cumplir sus funciones.
+      </p>
+      <p>
+        La CPU recibe todo ese conjunto de números binarios mediante señales
+        eléctricas que interpreta y distribuye a los demás componentes.
+      </p>
+      <p>
+        <strong> ¿QUÉ ES EL CÓDIGO BINARIO? </strong> Es un conjunto de números
+        binarios, en concreto 0 y 1, que busca representar números en base 2, de
+        modo que según la posición de cada número, este tiene un determinado
+        valor que la máquina puede interpretar para llevar cabo una orden. Cada
+        número se presenta con un bit, que reduciéndolo a la mínima expresión
+        sería como cuando encendemos y apagamos una bombilla; 0 para apagado y 1
+        para cuando encendemos y el circuito comienza de nuevo a funcionar.
+      </p>
+      <p>
+        <strong> ¿CÓMO FUNCIONA UN CÓDIGO BINARIO? </strong>
+        Cualquier palabra, texto y vídeo se puede representar con conjuntos de
+        bits de 0 y 1, esto significa, que si alguien escribe una determinada
+        secuencia de 0 y 1 activará cierto comando que la computadora entenderá
+        sin importar que esté en binario. para ello, utiliza potencias de base 2
+        (ya que recordemos que tiene dos dígitos o bits, 0-1).
+      </p>
+      <p>
+        Si quisiésemos escribir el número 21 por ejemplo, procederíamos así:
+      </p>
+      <p>
+        <strong>Siendo:</strong> <br />
+        2^0 = 1 2^1= 2 2^2 = 4 2^3 = 8 2^4 = 16 <br />
+        Solo tendrás que sumar los números del cuadro que tengan “1” y así
+        sumaría 18+4+1 = 21 Incluso se puede convertir en vez de decimal a
+        código hexadecimal, que utiliza letras, por lo que las posibilidades son
+        realmente muy grandes.
+      </p>
+      <h3>IMG</h3>
+      <img src="http://www.librosmaravillosos.com/sistemasnumeracion/imagenes/e017.gif" alt="" />
+      <h1>Videos de youtube</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lqFaPj6BYi4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Boleana'">
+      <h1>Informacion:</h1>
+      <strong>
+      ÁLGEBRA BOOLEANA
+      </strong>
+      <p>
+        Desarrollada por George Boole, es una herramienta para representar proposiciones lógicas en forma algebraica.
+        Se aplica en representación de circuitos lógicos y diseño digital.
+      </p>
+      <p>
+        El Algebra de Boole ´ es un sistema matemático que utiliza variables y operadores lógicos, las variables pueden
+        valer 0 ´o 1 y las operaciones básicas son OR(+) y AND(·). Luego se definen las expresiones de conmutación como
+        un numero finito de variables y constantes, relacionadas mediante los operadores (AND y OR). En la ausencia de
+        paréntesis, se utilizan las mismas reglas de precedencia, que tienen los operadores suma (OR) y multiplicación
+        (AND) en el ´algebra normal.
+      </p>
+      <strong>
+      EN EL ÁLGEBRA DE BOOLE SE CUMPLEN LAS SIGUIENTES LEYES:
+      </strong>
+      <p>
+        Dominación:
+        <br>
+        X + 1 = 1 X · 0 = 0
+      </p>
+      <p>Demostración
+        <br>
+      X + 1 = (X + 1) · 1 = (X + 1) · (X + X) (X + 1) · (X + X) = X + (1 · X) = 1</p>
+      <p>Idempotencia
+        <br>
+        X + X = X
+      X · X = X</p>
+      <p>Doble complemento:
+        <br>
+      X = X</p>
+      <p>
+        Absorción
+        <br>
+        X + X · Y = X
+      X · (Y + X) = X </p>
+      <p>
+        Demostración:
+        <br> X + X · Y = (X · 1) + (X · Y ) = X · (1 + Y ) = X
+      </p>
+      <h3>IMG</h3>
+      <img src="https://sites.google.com/site/area1sexto/_/rsrc/1411760334775/home/cibernetica/identidades-basicas-del-algebra-booleana/Screen%20shot%202014-09-26%20at%202.38.10%20PM.png"
+      alt="" />
+      <h3>Vides de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p58C7OWe3Xk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Circuitos'">
+      <h1>Informacion:</h1>
+      
+      <p>
+        <strong>CIRCUITOS COMBINACIONALES MSI Y LSI</strong>
+        Los sistemas combinacionales son aquellos en los que las salidas dependen exclusivamente de las entradas, luego para una misma entrada siempre se tiene la misma salida.
+        Hasta ahora el diseño de funciones lógicas, o de circuitos lógicos, se ha realizado mediante el uso exclusivo de puertas básicas. Los circuitos que contienen estas puertas básicas son conocidos como SSI (Small Scale of Integration) por que contienen un número pequeño de transistores. El diseño que se realiza con estos dispositivos se denomina CUSTOM.
+        <br>
+        Un paso más profundo en el diseño HARDWARE es realizar un diseño SEMICUSTOM, basado en el uso de bloques constructores más complejos. Esto se puede hecer mediante el uso de sistemas o circuitos MSI (Medium Scale of Integration) dónde el número de puertas básicas puede llegar a 100. Más avanzados son los sistemas LSI (Large Scale of Integration ~1000), VLSI (Very Large Scale of Integration >1000), y ULSI (Ultra Large Scale of Integration >100000).
+        <br>
+        En un computador se realizan principalmente operaciones de codificación y decodificación de datos usando codificadores y decodificadores; transmisión y control de datos usando líneas de bus, multiplexadores y demultiplexadores; y procesado de datos mediante circuitería aritmética.
+        <br>
+        En nuestro computador podemos encontrarnos los siguientes sistemas MSI: • CODIFICADORES Y DECODIFICADORES • MULTIPLEXORES Y DEMULTIPLEXORES • SUMADORES, COMPARADORES ...
+        <br>
+        Además estos dispositivos pueden usarse también para la realización de funciones complejas con un considerable ahorro de área frente al uso de puertas básicas (circuitos SSI).
+      </p>
+      
+      <h3>IMG</h3>
+      <img src="http://image.slidesharecdn.com/circuitos-integrados-1227375444654175-8/95/circuitos-integrados-7-728.jpg?cb=1227368304"
+      alt="" />
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OaEPmqXesik" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Decodificadores'">
+      <h1>Informacion:</h1>
+      <p>
+        <strong>
+        DECODIFICADORES
+        </strong>
+        Un decodificador es un circuito integrado que genera todos los minitérminos correspondientes a n entradas:
+      </p>
+      <p>
+        En la practica, la mayoría de los decodificadores tienen las salidas complementadas indicándolo mediante una pequeña burbuja o circulo en la salida, es decir, el decodificador genera maxitérminos(0) en lugar de minitérminos(1).
+      </p>
+      <p>
+        Una de las aplicaciones de un decodificador es la implementación de funciones Booleanas. Una función Booleana de n variables puede ser implementada fácilmente al unir los minitérminos(maxitérminos) correspondientes a la función utilizando una compuerta OR(NAND).
+      </p>
+      <h3>IMG:</h3>
+      <img src="http://azul2.bnct.ipn.mx/clogicos/codificadores_decodificadores/graficos(.gif)/UNID2_37.gif" alt="" />
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Q887j1snu8A" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Multiplexores'">
+      <h1>Informacion:</h1>
+      <p><strong>MULTIPLEXORES</strong>
+        El multiplexor, también conocido de manera acortada como “MUX“, es un circuito lógico combinacional diseñado para conmutar una o varias líneas de entrada en una sola línea de salida común mediante la aplicación de una lógica de control.
+        Los multiplexores funcionan como conmutadores de acción muy rápida que gestionan varias líneas de entrada llamadas “canales” y conectan una de estas entradas a la línea de salida en función de la señal de control.
+      </p>
+      <p>
+        <strong>  LOS MUXS PUEDEN SER:
+        </strong>
+        Circuitos digitales hechos con puertas lógicas de alta velocidad para cambiar datos digitales o binarios.
+        Circuitos analógicos usando transistores, MOSFETs o relés para conmutar una de las entradas de voltaje o corriente en una sola salida.
+      </p>
+      
+      <h3>IMG:</h3>
+      <img src="http://e-ducativa.catedu.es/44700165/aula/archivos/repositorio/4750/4923/html/mux8.gif" alt="" />
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gTcU-FrRioM" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Contadores'">
+      <h1>Informacion:</h1>
+      
+      <p><strong>CONTADORES
+        </strong>
+      </p>
+      
+      <h3>IMG:</h3>
+      <img src="http://www.utn.edu.ec/reduca/programacion/estructuras/Contadores.png" alt="" />
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1Roajj6yfMs" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'Sumadores'">
+      <h1>Informacion:</h1>
+      <p><strong>
+        SUMADORES
+        </strong>
+        EL sumador es un circuito digital que realiza la adición de números. En muchas computadoras y otros tipos de procesadores se utilizan sumadores en las unidades aritméticas lógicas. También se utilizan en otras partes del procesador, donde se utilizan para calcular direcciones, índices de tablas, operadores de incremento y decremento y operaciones similares.
+        <br>
+        Aunque los sumadores se pueden construir para muchas representaciones numéricas, tales como decimal codificado en binario o exceso-3, los sumadores más comunes funcionan en números binarios. En los casos en que se utiliza el complemento a dos o el complemento a uno para representar números negativos, es trivial modificar un sumador para convertirlo en un sumador-restador. Otras representaciones de números con signo requieren más lógica alrededor del sumador básico.
+      </p>
+      <p>
+        <strong>   SEMISUMADOR
+        </strong>
+        El semisumador suma dos dígitos binarios simples A y B, denominados sumandos, y sus salidas son Suma (S) y Acarreo (C). La señal de acarreo representa un desbordamiento en el siguiente dígito en una adición de varios dígitos. El diseño más simple de semisumador, representado a la derecha, incorpora una puerta XOR para S y una puerta AND para C. Dos semisumadores pueden ser combinados para hacer un sumador completo, añadiendo una puerta OR para combinar sus salidas de acarreo.
+      </p>
+      <h3>IMG:</h3>
+      <img src="http://2.bp.blogspot.com/-dCwAqf6SQz8/VFmbnEOu55I/AAAAAAAAAJQ/fOseoZXYWb4/s1600/1.bmp" alt="" />
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HiCbt2EIBqU" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'ALU'">
+      <h1>Informacion:</h1>
+      
+      En computación, la unidad aritmética lógica o unidad aritmético-lógica, también conocida como ALU (siglas en inglés de arithmetic logic unit), es un circuito digital que calcula operaciones aritméticas (como suma, resta, multiplicación, etc.) y operaciones lógicas (si, y, o, no), entre valores (generalmente uno o dos) de los argumentos.
+      Por mucho, los circuitos electrónicos más complejos son los que están construidos dentro de los chips de microprocesadores modernos. Por lo tanto, estos procesadores tienen dentro de ellos un ALU muy complejo y potente. De hecho, un microprocesador moderno (y los mainframes) puede tener múltiples núcleos, cada núcleo con múltiples unidades de ejecución, cada una de ellas con múltiples ALU.
+      Muchos otros circuitos pueden contener en el interior una unidad aritmético lógica: unidades de procesamiento gráfico como las que están en las GPU modernas, FPU como el viejo coprocesador matemático 80387, y procesadores digitales de señales como los que se encuentran en tarjetas de sonido, lectoras de CD y los televisores de alta definición. Todos éstos tienen en su interior varias ALU potentes y complejas.
+      <h3>IMG:</h3>
+      <img src="http://ati.ttu.ee/IAY0340/labs/Tutorials/SystemC/ALU/ALU.png" alt="" />
+      <h3>Videos de youtube</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YygPpWjNWts" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div *ngIf="actualView == 'homework'">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            Tarea 1
+            </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show"  aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <strong>STEVE JOBS VS BILL GATES</strong>
+              <br>
+              La relación entre Bill Gates y Steve Jobs comenzó a finales de la década de los 70, cuando Microsoft ganaba gran parte de su dinero gracias al diseño de software para la Apple.
+              Cuando Jobs inició el desarrollo de la Macintosh original a principios de los 80, él quería que Microsoft creara para el ordenador una versión de BASIC, un lenguaje de programación de uso fácil, y también un software de aplicación, como programas de procesamiento de texto, gráficos y hojas de cálculo, así que fue a visitar a Gates en la oficina que éste tenía cerca de Seattle y le presentó una tentadora visión de lo que Macintosh sería: una computadora para las masas con una interfaz gráfica amigable. Gates aceptó hacer versiones gráficas de una nueva hoja de cálculo llamada Excel, un procesador de textos llamado Word, así como BASIC.
+              Bill viajaba a menudo a Cupertino para las demostraciones del sistema operativo Macintosh, y no estaba bastante impresionado.
+              A ambos les entusiasmaba la posibilidad de que Microsoft creara software gráfico para la Macintosh que llevara la computadora personal a un nuevo nivel, y Microsoft destinó a esa tarea un amplio equipo.
+              Tenían razón en preocuparse. Gates creyó que las interfaces gráficas eran el futuro, y que Microsoft tenía tanto derecho como Apple de utilizar la idea de la metáfora del escritorio, originalmente desarrollada por el centro de investigación de Xerox, no por Apple.
+              En su acuerdo original, Jobs había convencido a Gates que Microsoft no crearía software gráfico para nadie más hasta que hubiera transcurrido un año del debut de Macintosh en enero de 1983. Por desgracia para Apple, la compañía no contempló la posibilidad de que el lanzamiento de la Macintosh se demoraría un año. Por lo que Gates estaba en su derecho de anunciar, en noviembre de 1983, que Microsoft planeaba desarrollar un nuevo sistema operativo para las computadoras IBM -que incorporaban una interfaz gráfica con ventanas, íconos, y un ratón para navegar- llamado Windows.
+              
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+            aria-controls="collapseTwo">
+            Tarea 2
+            </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <strong>LA HISTORIA DE GOOGLE
+              </strong>
+              <br>
+              Larry Page y Sergey Brin se conocieron en 1995, cuando tenían 24 y 23 años respectivamente, en un acto or)ganizado por la Universidad de Stanford.
+              Ambos tenían un objetivo en común: conseguir información relevante a partir de una importante cantidad de datos. En enero de 1996 iniciaron su colaboración en un buscador llamado BackRub.
+              Larry empezó a trabajar en la forma de conseguir un entorno para los servidores que funcionara con PCs de gama baja y que no necesitará de potentes máquinas para funcionar.
+              Un año después, la tecnología utilizada por BackRub para analizar los links empezaba a ser conocida en todo el campus, obteniendo una gran reputación. Era la base sobre la que se construiría Google.
+              El nombre proviene de un juego de palabras con el término “googol”, acuñado por Milton Sirotta, sobrino del matemático norteamericano Edward Kasner, para referirse al número representado por un 1 seguido de 100 ceros. El uso del término refleja la misión de la compañía de organizar la inmensa cantidad de información disponible en la web y en el mundo.
+              Los primeros cien mil dólares
+              Durante los primeros meses de 1998 Larry y Sergey continuaron trabajando para perfeccionar la tecnología de búsqueda que habían desarrollado. Utilizaron sus dormitorios como centro de datos y oficinas. Con esta infraestructura iniciaron la búsqueda de inversionistas que les ayudaran a financiar su novedosa tecnología, superior a todas las existentes hasta la fecha.
+              A pesar de la fiebre de las “puntocom” en ese momento, Larry y Sergey tenían poco interés en montar una empresa propia cuyo negocio fuera el motor de búsqueda que habían desarrollado.
+              Entre estos posibles inversores, se encontraba David Filo, amigo de los dos y uno de los fundadores de Yahoo!. Filo les animó a que ellos mismos desarrollaran el proyecto, creando una empresa basada en el buscador cuando estuviera completamente desarrollado.
+              Aunque el potencial que tenía era enorme, se encontraron con la negativa de muchos portales, que consideraban el hecho de tener un buen buscador como algo secundario en sus objetivos.
+              Así pues, tomaron la decisión de poner en marcha el proyecto y buscar capital para abandonar las habitaciones y acabar de pagar todo el material que habían comprado para los servidores. Hicieron un plan de empresa y fueron en busca de inversionistas.
+              Andy Bechtolsheim, uno de los fundadores de Sun Microsystems, enseguida vio que Google tenía un potencial enorme. Sólo pudieron mostrarle una pequeña demo pero fue suficiente para que inmediatamente les diera un cheque por valor de 100.000 dólares, a nombre de Google Inc.
+              Pero surgió un pequeño problema: no existía aún una empresa llamada Google Inc., ¡por lo tanto no podían cobrar ni el cheque! Un par de semanas más tarde decidieron buscar nuevos inversionistas entre familiares, amigos y conocidos para poner en marcha la compañía.
+              
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+            aria-controls="collapseThree">
+            Tarea 3
+            </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <strong>CÓDIGO ENIGMA (PELÍCULA)
+              </strong>
+              <br>
+              CÓDIGO ENIGMA (PELÍCULA)
+              Esta película abarca el periodo de la segunda guerra mundial, cuyo protagonista es el matemático Allan Turing, un grupo de descifradores ingleses y su máquina bautizada por el cómo ¨Christopher¨ en honor a un amigo de su juventud, esta historia una vez más evidencia el desarrollo tecnológico gracias al sector bélico, se muestra una vida solitaria y como la sociedad trato a la comunidad homosexual en esta época.
+              Alan Turing descifra a Enigma, pero no logra descifrar su propia identidad en tanto hombre.
+              En efecto, descubre tempranamente que no es como sus compañeros de escuela, sino un "chico raro" con comportamientos rígidos y mecánicos. A causa de esto, recibe burlas y agresiones, excepto de Christopher, un compañero que deviene su amigo, protector y objeto de amor. Él decodifica para Alan los mensajes enigmáticos de sus compañeros. Trágicamente, Christopher muere. Turing siente el vacío de la pérdida y enfrenta ahora dos binarios: hombre/mujer y vida/muerte. Pergeña una estrategia, "El Juego de Imitación", donde un participante engaña a otro respecto de su género. Después, Turing propone que pensar es equivalente a calcular y que una máquina que piense/calcule, mediante un algoritmo universal, podría imitar a un humano. ¿Acaso busca plantear un indeterminismo de géneros que incluiría el neutro de la máquina? ¿Trata de restituir la pérdida de Christopher a través una máquina que brinde un soporte digital al pensamiento? Ambos interrogantes remiten a una búsqueda prometeica de dar existencia corporal a un "ser pensante" sin intervención del sexo.
+              A pesar de sus problemas logra desentrañar el código enigma creado por los alemanes para comunicarse y dirigir a sus tropas, gracias a este código Alemania llevaba una amplia ventaja en la guerra con los aliados, la creación de Christopher al descifrar los códigos nazis, logro evitar la muerte de millones de personas y años de larga guerra. El anonimato de estos héroes y sus esfuerzos fueron merecidamente reconocidos 50 años después por la reina de Inglaterra.
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
